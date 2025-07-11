@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tribute Page</title>
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .header-content h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .main-content {
+      background: #f5f5f5;
+      padding: 3rem 1rem;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      margin-bottom: 3rem;
+      padding: 1rem;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      flex: 1 1 60%;
+      padding-right: 1rem;
+    }
+
+    .about-image {
+      flex: 1 1 35%;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 50%;
+      height: auto;
+    }
+
+    .biography {
+      padding: 1rem 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #1da1f2;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+      }
+
+      .about-text, .about-image {
+        flex: 1 1 100%;
+        padding: 0;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Video Background -->
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="header-content">
+      <h1>In Tribute to John Doe</h1>
+      <p>Honoring a Life of Impact</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="main-content">
+
+    <!-- About Section -->
+    <div class="section about-section">
+      <div class="about-text">
+        <h2>About John</h2>
+        <p>John Doe was an inspirational figure whose dedication and compassion touched the lives of many. His legacy lives on through the memories he left behind.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://via.placeholder.com/200" alt="John Doe Profile">
+      </div>
+    </div>
+
+    <!-- Biography Section -->
+    <div class="section biography">
+      <h2>Biography</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet suscipit urna. Proin ac lorem in justo fringilla aliquet. Aenean imperdiet risus nec ligula varius, sit amet vulputate lorem vestibulum. Duis congue justo ac diam consectetur, at varius sapien dictum. Mauris id velit magna. Etiam et lectus nec nisi malesuada lacinia. Integer a tincidunt diam. Nullam in justo at nulla cursus sodales.
+      </p>
+      <p>
+        Suspendisse potenti. Vestibulum quis sapien eu risus sodales fermentum. Sed eu est a ligula luctus egestas. Vivamus tristique lorem non sem eleifend, non commodo nisi tincidunt. Donec lacinia velit non lectus ullamcorper, a congue sapien scelerisque. Aliquam erat volutpat. Donec sagittis, nibh a varius elementum, orci neque sodales justo, non dignissim massa purus sed nunc.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tribute Page. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
